@@ -3,4 +3,18 @@ let counts = {};
 
 // your code here
 
+
+for(let i in par){
+    const letra = par[i].toLowerCase();
+    if( letra == " "){
+        continue;
+    }
+    else if(counts[letra]==undefined){
+        counts[letra] = 1;
+
+    }else{
+        counts[letra]++;
+    }
+}
+
 console.log(counts);

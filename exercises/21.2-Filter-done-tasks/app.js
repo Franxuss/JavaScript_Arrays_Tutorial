@@ -9,4 +9,9 @@ let tasks = [
 	{ label: 'Make a trip', done: false }
 ];
 
-//your code here
+var result = tasks.filter(function(tarea){
+    if(tarea.done===true)
+    return tarea;
+    
+});
+console.log(result);
